@@ -1,0 +1,26 @@
+// main
+@import "settings";
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+.page{
+  display: grid;
+  grid-template-columns: 1fr 1058px 1fr;
+  grid-template-areas: "... wrapper ...";
+}
+
+.page-wrapper{
+  grid-area: wrapper;
+}
+
+// import files of blocks
+@import "../../blocks/header/header";
+
+
+// importing media queries
+@import "media";

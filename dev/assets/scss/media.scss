@@ -1,0 +1,25 @@
+@import 'settings';
+
+
+
+@media screen and (max-width: 1080px){
+	.page{
+	  grid-template-columns: 1fr;
+	  grid-template-areas:  "wrapper";
+	}
+}
+
+
+@media screen and (max-width: 850px){
+	.header__top, .header__right, .menu__inner, .header__button-login, .header__button-text{
+		display: none;
+	}
+	.header__actions{
+		width: 100%;
+	}
+	.header__logo-fixed, .header__button-login_mobile{
+		display: block;
+	}
+
+}
+
